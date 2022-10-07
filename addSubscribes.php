@@ -19,7 +19,7 @@
     $email=$_POST["email"];
    
     //3. SQL Query to insert data to database
-    $queryData = mysqli_query( $conn, "INSERT INTO subscribers(email)
+    $queryData = mysqli_query( $Conn, "INSERT INTO subscribers(email)
      VALUES('$email') ");
     //4.check if data inserted
     if($queryData){
@@ -40,7 +40,7 @@
                             <span>Subscribers</span>
                         </div>
                         <div class="card-body">
-                            <form action="addSubscribers.php" method="post">
+                            <form action="addSubscribes.php" method="post">
                                 
                                 <div class="row">
                                     
